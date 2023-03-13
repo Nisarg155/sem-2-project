@@ -2,49 +2,72 @@
 <html>
     <style>
         form{
-            text-align: center;
+            background-color: #f5f5dc;
+            color: #006400;
+
+            text-align:justify;
             font-size: 30px;
             border-radius: 20px;
-            background-color:azure;
             padding: 18px;
             
         }
     </style>
-    <body style="background-color: darkgray;" >
+    <body style="background-color: antiquewhite;" >
     <form autocomplete="on" action="get" >
         <label for="name"  >Full Name (optional) </label> :-  
-        <input type="text" id="name" name="name-filed">
+        <input type="text" id="name" name="name-filed" placeholder="Enter Name ">
         <br>
         <label for="e-mail" aria-required="true">E-mail :- </label>
-        <input type="email" id="e-mail" name="e-mail">
-        <br><br>
-        <label for="presentation-rating">How was the presentation. </label>
-        <br><input type="radio" name="pre" value="5">
-        <label for="5" >5</label>
-        <br><input type="radio" name="pre" value="4">
-        <label for="4" >4</label>
-        <br><input type="radio" name="pre" value="3">
-        <label for="2" >3</label>
-        <br><input type="radio" name="pre" value="2">
-        <label for="5" >2</label>
-        <br><input type="radio" name="pre" value="1">
-        <label for="5" >1</label>
+        <input type="email" id="e-mail" name="e-mail" placeholder="Enter a valid email" >
+        <br>
+        <lable for="number">Enter your phone number :- </lable>
+        <input type="number" required placeholder="Enter number " id="number">
+        <br>
+        <label for="bramch">Branch :- </label>
+        <select id="bramch">
+            <optgroup label="Branch">
+                <option selected>CE</option>
+                <option>IT</option>
+                <option>EC</option>
+                <option>OTHERS</option>
+            </optgroup>
+        </select>
+        <label for="sem">Semester :- </label>
+        <select>
+            <optgroup label="sem">
+                <option selected>2</option>
+                <option>4</option>
+                <option>6</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="presentation-rating">How was the presentation .</label>
+        <br><input type="radio" name="pre" value="&#x1F60D">
+        <label for="&#x1F60D" > &#x1F60D </label>
+        <br><input type="radio" name="pre" value="&#x1F600">
+        <label for="&#x1F600" > &#x1F600 </label>
+        <br><input type="radio" name="pre" value="&#X1F610">
+        <label for="&#X1F610" >&#X1F610</label>
+        <br><input type="radio" name="pre" value="&#X1F615">
+        <label for="&#X1F615" >&#X1F615</label>
+        <br><input type="radio" name="pre" value="&#x1F621">
+        <label for="&#x1F621" > &#x1F621 </label>
         <br>
         <label for="explaination">How was the explaination .</label>
-        <br><input type="radio" name="explaination" value="5">
-        <label for="5" >5</label>
-        <br><input type="radio" name="explaination" value="4">
-        <label for="4" >4</label>
-        <br><input type="radio" name="explaination" value="3">
-        <label for="3" >3</label>
-        <br><input type="radio" name="explaination" value="2">
-        <label for="2" >2</label>
-        <br><input type="radio" name="explaination" value="1">
-        <label for="1" >1</label>
+        <br><input type="radio" name="explaination" value="&#x1F60D">
+        <label for="&#x1F60D" >&#x1F60D</label>
+        <br><input type="radio" name="explaination" value="&#x1F600">
+        <label for="&#x1F600" >&#x1F600</label>
+        <br><input type="radio" name="explaination" value="&#X1F610">
+        <label for="&#X1F610" >&#X1F610</label>
+        <br><input type="radio" name="explaination" value="&#X1F615">
+        <label for="&#X1F615" >&#X1F615</label>
+        <br><input type="radio" name="explaination" value="&#x1F621">
+        <label for="&#x1F621" >&#x1F621</label>
         <br>
         <label for="suggestion">Any  suggestion you want to provide.</label>
         <br>
-        <input type="text" name="suggestion" id="suggestion">
+        <input type="text" name="suggestion" id="suggestion" placeholder="optional">
         <br>
         <input type="submit" style="height:30px;width: 100px;color: coral;box-shadow: 10px;background-origin: padding-box;">
         </form>
