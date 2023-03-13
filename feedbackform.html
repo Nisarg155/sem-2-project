@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        form{
-            background-color: #f5f5dc;
-            color: #006400;
+<style>
+    form {
+        background-color: #f5f5dc;
+        color: #006400;
 
-            text-align:justify;
-            font-size: 30px;
-            border-radius: 20px;
-            padding: 18px;
-            
-        }
-    </style>
-    <body style="background-color: antiquewhite;" >
-    <form autocomplete="on" action="get" >
-        <label for="name"  >Full Name (optional) </label> :-  
+        text-align: justify;
+        font-size: 30px;
+        border-radius: 20px;
+        padding: 18px;
+
+    }
+
+    .my-button {
+        background-color: #006400;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .my-button:hover {
+        background-color: #ffffff;
+        color: #006400;
+    }
+</style>
+
+<body style="background-color: antiquewhite;">
+    <form autocomplete="on" action="get">
+        <label for="name">Full Name (optional) </label> :-
         <input type="text" id="name" name="name-filed" placeholder="Enter Name ">
         <br>
         <label for="e-mail" aria-required="true">E-mail :- </label>
-        <input type="email" id="e-mail" name="e-mail" placeholder="Enter a valid email" >
+        <input type="email" id="e-mail" name="e-mail" placeholder="Enter a valid email">
         <br>
         <lable for="number">Enter your phone number :- </lable>
         <input type="number" required placeholder="Enter number " id="number">
@@ -43,34 +61,36 @@
         <br>
         <label for="presentation-rating">How was the presentation .</label>
         <br><input type="radio" name="pre" value="&#x1F60D">
-        <label for="&#x1F60D" > &#x1F60D </label>
+        <label for="&#x1F60D"> &#x1F60D </label>
         <br><input type="radio" name="pre" value="&#x1F600">
-        <label for="&#x1F600" > &#x1F600 </label>
+        <label for="&#x1F600"> &#x1F600 </label>
         <br><input type="radio" name="pre" value="&#X1F610">
-        <label for="&#X1F610" >&#X1F610</label>
+        <label for="&#X1F610">&#X1F610</label>
         <br><input type="radio" name="pre" value="&#X1F615">
-        <label for="&#X1F615" >&#X1F615</label>
+        <label for="&#X1F615">&#X1F615</label>
         <br><input type="radio" name="pre" value="&#x1F621">
-        <label for="&#x1F621" > &#x1F621 </label>
+        <label for="&#x1F621"> &#x1F621 </label>
         <br>
         <label for="explaination">How was the explaination .</label>
         <br><input type="radio" name="explaination" value="&#x1F60D">
-        <label for="&#x1F60D" >&#x1F60D</label>
+        <label for="&#x1F60D">&#x1F60D</label>
         <br><input type="radio" name="explaination" value="&#x1F600">
-        <label for="&#x1F600" >&#x1F600</label>
+        <label for="&#x1F600">&#x1F600</label>
         <br><input type="radio" name="explaination" value="&#X1F610">
-        <label for="&#X1F610" >&#X1F610</label>
+        <label for="&#X1F610">&#X1F610</label>
         <br><input type="radio" name="explaination" value="&#X1F615">
-        <label for="&#X1F615" >&#X1F615</label>
+        <label for="&#X1F615">&#X1F615</label>
         <br><input type="radio" name="explaination" value="&#x1F621">
-        <label for="&#x1F621" >&#x1F621</label>
+        <label for="&#x1F621">&#x1F621</label>
         <br>
-        <label for="suggestion">Any  suggestion you want to provide.</label>
+        <label for="suggestion">Any suggestion you want to provide.</label>
         <br>
         <input type="text" name="suggestion" id="suggestion" placeholder="optional">
-        <br>
-        <input type="submit" style="height:30px;width: 100px;color: coral;box-shadow: 10px;background-origin: padding-box;">
-        </form>
-    </body>
+        <br><br>
+        <button type="submit" class="my-button">Submit</button>
+
     </form>
+</body>
+</form>
+
 </html>
