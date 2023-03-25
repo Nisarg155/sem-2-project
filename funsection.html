@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fun section</title>
+</head>
+<style>
+    body {
+        background-color: #f5f5dc;
+        color: #015701;
+        text-align: justify;
+        font-size: 40px;
+        border-radius: 20px;
+        padding: 18px;
+    }
+
+    button {
+        background-color: #015701;
+        color: #f5f5dc;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 0px;
+        height: 40px;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <lable for="location">Click the button to share the location.</lable>
+    <br>
+    <button id="location" style="height: 40px;" onclick="getlocation()">Share location</button>
+    <!--? to print the location coordinates get from the function -->
+    <p id="location-print"> </p>
+    <label for="mylocation">Click the button below to show my location .</label>
+    <br>
+    <button id="mylocation" onclick="Mylocation()" ondblclick="Showmap()">My location</button>
+    <br>
+    <p id="showmylocation"></p>
+
+    <script>
+        const loc = document.getElementById("location-print");
+        const myloc = document.getElementById("showmylocation");
+        function getlocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showposition);
+            }
+            else {
+                loc.innerHTML = "Geolocation is not supported by this browser";
+            }
+        }
+        function showposition(position) {
+            loc.innerHTML = "Your location coordinates are <br>" + "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+        function Mylocation() {
+            myloc.innerHTML = "My location coordinates are <br> " + "latitide :- 22.67703 <br>" + "longitude :- 72.8808";
+        }
+
+    </script>
+
+</body>
+
+</html>
