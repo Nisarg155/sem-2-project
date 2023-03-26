@@ -3,6 +3,7 @@
 
 <head>
     <title>Fun section</title>
+    <link rel="stylesheet" href="jigsawgame.css">
 </head>
 <style>
     body {
@@ -33,9 +34,24 @@
     <p id="location-print"> </p>
     <label for="mylocation">Click the button below to show my location .</label>
     <br>
-    <button id="mylocation" onclick="Mylocation()" ondblclick="Showmap()">My location</button>
+    <button id="mylocation" onclick="Mylocation()">My location</button>
     <br>
     <p id="showmylocation"></p>
+    <p>Jigsaw Game </p>
+    <br>
+    <div id="bigbox" draggable="true">
+        <div class="smallbox1" draggable="true" ></div>
+        <div class="smallbox2" draggable="true" ></div>
+        <div class="smallbox3" draggable="true" ></div>
+        <div class="smallbox4" draggable="true" ></div>
+    </div>
+    <br>
+    <img draggable="true" id="piece1" src="piece1.png" height="198px" width="160px" >
+    <img draggable="true" id="piece2" src="piece2.png" height="198px" width="160px" >
+    <img draggable="true" id="piece3" src="piece3.png" height="198px" width="160px" >
+    <img draggable="true" id="piece4" src="piece4.png" height="198px" width="160px" >
+
+
 
     <script>
         const loc = document.getElementById("location-print");
@@ -55,6 +71,7 @@
         function Mylocation() {
             myloc.innerHTML = "My location coordinates are <br> " + "latitide :- 22.67703 <br>" + "longitude :- 72.8808";
         }
+        
 
     </script>
 

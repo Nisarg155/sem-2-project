@@ -1,0 +1,15 @@
+#bigbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 324px;
+    height: 400px;
+    background-color:azure;
+    
+}
+#bigbox .smallbox1,#bigbox .smallbox2,#bigbox .smallbox3,#bigbox .smallbox4{
+    width: 160px;
+    height: 198px;
+    border: 1px black solid;
+}
+
+
