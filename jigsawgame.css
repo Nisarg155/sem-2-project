@@ -3,13 +3,23 @@
     flex-wrap: wrap;
     width: 324px;
     height: 400px;
-    background-color:azure;
+    background-color:white;
     
 }
-#bigbox .smallbox1,#bigbox .smallbox2,#bigbox .smallbox3,#bigbox .smallbox4{
+#bigbox img{
     width: 160px;
     height: 198px;
     border: 1px black solid;
 }
 
+#imagebox{
+    display: inline-flex;
+    width: 640px;
+    height:198px;
+    background-color: aliceblue;
+}
+#imagebox img{
+    height: 198px;
+    width: 160px;
+}
 
