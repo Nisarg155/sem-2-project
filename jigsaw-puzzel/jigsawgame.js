@@ -1,34 +1,90 @@
 var rows = 2;
-var col = 2;
+var columns = 2;
 
-var currtile;
-var othertile;
+var currTile;
+var otherTile;
 
 
-window.onload = function () {
-
-    //? initializing 2*2 board
-    for(let r = 0 ; r<rows ; r++)
-    {
-        for(let c= 0 ;c<col;c++)
-        {
+window.onload = function() {
+    //initialize the 5x5 board
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+            //<img>
             let tile = document.createElement("img");
             tile.src = "whiteimg.png";
 
-            document.getElementById("bigbox").append(tile);
+            //DRAG FUNCTIONALITY
+            tile.addEventListener("dragstart", dragStart); //click on image to drag
+            tile.addEventListener("dragover", dragOver);   //drag an image
+            tile.addEventListener("dragenter", dragEnter); //dragging an image into another one
+            tile.addEventListener("dragleave", dragLeave); //dragging an image away from another one
+            tile.addEventListener("drop", dragDrop);       //drop an image onto another one
+            tile.addEventListener("dragend", dragEnd);      //after you completed dragDrop
+
+            document.getElementById("board").append(tile);
         }
     }
-    //? piece
-    let piece = [];
-    for(let i =1 ;i<=r*c;i++)
-    {
-        piece.push(i.toString());
+
+    //pieces
+    let pieces = [];
+    for (let i=1; i <= rows*columns; i++) {
+        pieces.push(i.toString()); //put "1" to "25" into the array (puzzle images names)
     }
-    for(let i = 0;i<piece.length;i++)
-    {
-        
+    pieces.reverse();
+    for (let i =0; i < pieces.length; i++) {
+        let j = Math.floor(Math.random() * pieces.length);
+
+        //swap
+        let tmp = pieces[i];
+        pieces[i] = pieces[j];
+        pieces[j] = tmp;
     }
-    
+
+    for (let i = 0; i < pieces.length; i++) {
+        let tile = document.createElement("img");
+        tile.src =  pieces[i] + ".png";
+
+        //DRAG FUNCTIONALITY
+        tile.addEventListener("dragstart", dragStart); //click on image to drag
+        tile.addEventListener("dragover", dragOver);   //drag an image
+        tile.addEventListener("dragenter", dragEnter); //dragging an image into another one
+        tile.addEventListener("dragleave", dragLeave); //dragging an image away from another one
+        tile.addEventListener("drop", dragDrop);       //drop an image onto another one
+        tile.addEventListener("dragend", dragEnd);      //after you completed dragDrop
+
+        document.getElementById("pieces").append(tile);
+    }
 }
 
+//DRAG TILES
+function dragStart() {
+    currTile = this; //this refers to image that was clicked on for dragging
+}
 
+function dragOver(e) {
+    e.preventDefault();
+}
+
+function dragEnter(e) {
+    e.preventDefault();
+}
+
+function dragLeave() {
+
+}
+
+function dragDrop() {
+    otherTile = this; //this refers to image that is being dropped on
+}
+
+function dragEnd() {
+    if (currTile.src.includes("whiteimg.png")) {
+        return;
+    }
+    let currImg = currTile.src;
+    let otherImg = otherTile.src;
+    otherTile.src = currImg;
+    currTile.src = otherImg;
+
+    
+}
