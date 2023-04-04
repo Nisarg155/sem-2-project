@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,33 @@
     <title>Jigsaw Game</title>
     <link rel="stylesheet" href="jigsawgame.css">
     <script src="jigsawgame.js"></script>
-    
+
 </head>
+
 <body>
+    <img src="../dark theme icon/moon.png" id="icon">
     <p>Jigsaw Game </p>
     <br>
     <div id="board"></div>
     <br>
     <br>
     <div id="pieces"></div>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                icon.src = "../dark theme icon/sun.png";
+            }
+            else {
+                icon.src = "../dark theme icon/moon.png"
+            }
+        }
+    </script>
+
 
 </body>
+
 </html>

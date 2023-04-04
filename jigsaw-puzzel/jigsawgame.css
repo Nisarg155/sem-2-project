@@ -1,8 +1,11 @@
-
+#icon{
+    height: 50px;
+    float: right;
+}
 
 body {
-    background-color: #f5f5dc;
-    color: #015701;
+    background-color:var(--background-color);
+    color: var(--text-color);
     text-align: center;
     font-size: 40px;
     border-radius: 20px;
@@ -36,6 +39,16 @@ body {
 #pieces img{
     width: 160px;
     height: 199px;
+}
+
+:root{
+    --background-color: #f5f5dc;
+    --text-color:green;
+}
+
+.dark-mode{
+    --background-color:darkslategrey;
+    --text-color:red;
 }
 
 
