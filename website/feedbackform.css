@@ -1,0 +1,43 @@
+#icon{
+    height: 30px;
+    float: right;
+}
+body{
+    background-color: var(--background-color);
+}
+form {
+
+    color:var(--text-color);
+    text-align: justify;
+    font-size: 30px;
+    border-radius: 20px;
+
+}
+
+.my-button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.my-button:hover{
+    background-color: var(--button-text-color);
+    color: var(--button-background-color);
+}
+
+
+:root{
+    --background-color: #f5f5dc;
+    --text-color:green;
+    --button-text-color:white;
+    --button-background-color:green;
+}
+
+.dark-mode{
+    --background-color: darkslategray;
+    --text-color:gold;
+    --button-text-color:white;
+    --button-background-color:gold;
+}

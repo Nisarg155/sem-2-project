@@ -1,0 +1,54 @@
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	text-align: justify;
+	font-size: 30px;
+	border-radius: 20px;
+	padding: 18px;
+}
+
+.contact{
+    color: var(--heading-color);
+}
+.heading{
+    color: var(--heading-color);
+}
+#myphoto {
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+}
+
+#nisarg {
+	color:var(--nisarg-color);
+	font-size: xx-large;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#icon {
+	width: 30px;
+	cursor: pointer;
+	float: right;
+}
+th,
+td {
+	text-align: center;
+	border: 1px solid var(--table-color);
+	font-size: x-large;
+}
+
+
+:root {
+	--background-color: #f5f5dc;      /*? light mode setting */
+    --heading-color: green;
+    --text-color:green;
+    --table-color:   black;
+    --nisarg-color: limegreen;
+}
+.dark-theme{
+    --background-color:  darkslategray;   /*? dark mode setting */
+	--heading-color: lime;
+    --text-color:white;
+    --table-color:   limegreen;
+    --nisarg-color:orangered;
+}
