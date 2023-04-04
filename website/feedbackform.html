@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html>
-<style>
-    form {
-        background-color: #f5f5dc;
-        color: #006400;
-        text-align: justify;
-        font-size: 30px;
-        border-radius: 20px;
-        padding: 18px;
 
-    }
+<head>
+    <title>
+        Feedback-form
+    </title>
+    <link rel="stylesheet" href="feedbackform.css">
+</head>
 
-    .my-button {
-        background-color: #006400;
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-    
-</style>
 
-<body style="background-color: antiquewhite;">
+<body>
     <form autocomplete="on" action="redirectfeedback.html" method="get">
+        <img src="../dark theme icon/moon.png" id="icon">
         <label for="name">Full Name (optional) </label> :-
         <input type="text" id="name" name="name-filed" placeholder="Enter Name ">
         <br>
@@ -77,12 +65,25 @@
         <br>
         <label for="suggestion">Any suggestion you want to provide.</label>
         <br>
-        <input type="text"  size = "50" style="height: 30px;" name="suggestion" id="suggestion" placeholder="optional" >
+        <input type="text" size="50" style="height: 30px;" name="suggestion" id="suggestion" placeholder="optional">
         <br><br>
         <button type="submit" class="my-button">Submit</button>
 
     </form>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                icon.src = "../dark theme icon/sun.png";
+            }
+            else {
+                icon.src = "../dark theme icon/moon.png"
+            }
+        }
+    </script>
 </body>
-</form>
 
 </html>

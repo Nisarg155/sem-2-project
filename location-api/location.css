@@ -1,18 +1,41 @@
 body {
-    background-color: #f5f5dc;
-    color: #015701;
-    text-align: justify;
-    font-size: 40px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 50px;
     border-radius: 20px;
     padding: 18px;
 }
 
 button {
-    background-color: #015701;
-    color: #f5f5dc;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 22px;
     border: 0px;
-    height: 40px;
-    font-style: italic;
+    height: 50px;
+    width: 200px;    
+}
+.button-hover:hover{
+    background-color: var(--button-text-color);
+    color: var(--button-background-color);
+}
+
+#icon{
+    float: right;
+    height: 30px;
+}
+
+:root{
+    --background-color:#f5f5dc;
+    --text-color: #015701;
+    --button-background-color: #015701;
+    --button-text-color:white;
+}
+
+.dark-mode{
+    --background-color:darkslategrey;
+    --text-color: orangered;
+    --button-background-color: orangered;
+    --button-text-color:white;
 }

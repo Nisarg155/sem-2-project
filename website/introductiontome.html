@@ -4,47 +4,29 @@
     <title>
         Introduction to me .
     </title>
+    <link rel="stylesheet" href="homepage.css">
 </head>
-<style>
-    body{
-        background-color: #f5f5dc;
-        color: #015701;
-        text-align: justify;
-        font-size: 30px;
-        border-radius: 20px;
-        padding: 18px;
-    }
-    a{
-        color: #006400;
-    }
-    #myphoto{
-        width:300px;
-        height: 300px;
-        border-radius: 200px;      
-    }
-    
-</style>
 
-<body style="background-color:antiquewhite;">
-    <h2>
-        My Introduction
-    </h2>
+<body >
+    
+    <img src="../dark theme icon/moon.png" id="icon" >
+
     <img id="myphoto" src="myphoto.png" alt="My Photo" width="300" height="300"></img>
-    <p style="color :limegreen; font-size:xx-large;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >
+    <p id="nisarg">
         <b>NISARG AMLANI <br> B.Tech COMPUTER ENGINEERING(PURSUING)</b>
     </p>
-    <h3 style="font-style: italic;">
+    <h3 style="font-style: italic;" class="heading">
         About Me
     </h3>
     <P>Myself <b>NISARG AMLANI,</b> pursing <b>Bachelor in Computer engineering </b> from <b>Dharmsinh Desai University(DDU)</b> <br> I am from <b>PORBANDAR</b> .</P>
-    <h3>
+    <h3 class="heading">
         Hobbies :
     </h3>
     <p>
         I like to listen songs and clicking photoes in my free time .<br> If it's Weekend I would like to chill by
         watching movies and sleep a lot .
     </p>
-    <h3>
+    <h3 class="heading">
         Interest :
     </h3>
     <p>
@@ -53,17 +35,10 @@
         I like to autonomate thing .
         <br>
     </p>
-    <h4>
+    <h4 class="heading">
         EDUCATION QUALIFICATION
     </h4>
-    <style>
-        th,
-        td {
-            text-align: center;
-            border: 1px solid black;
-            font-size: x-large;
-        }
-    </style>
+ 
     <table>
         <tr>
             <th>----Exam----</th>
@@ -105,17 +80,32 @@
 
 
     </table>
-    <h3>Contact Me:</h3>
-    <b>Github :- </b> <a href="https://github.com/Nisarg155" target="_blank"><img src="github-sign.png" height="30px"></a>
+    <h3 class="heading">Contact Me:</h3>
+    <b class="Contact">Github :- </b> <a href="https://github.com/Nisarg155" target="_blank"><img src="github-sign.png" height="30px"></a>
     <br>
-    <b>Linkedin :- </b><a href="https://www.linkedin.com/in/nisarg-amlani-b08911251/" target="_blank"><img src="LI-In-Bug.png" height="30px"></a>
+    <b class="Contact">Linkedin :- </b><a href="https://www.linkedin.com/in/nisarg-amlani-b08911251/" target="_blank"><img src="LI-In-Bug.png" height="30px"></a>
     <br>
-    <b>G-mail :- </b>
-    <a href="mailto: amlaninisarg15@gmail.com" target="_blank"><img src="gmail.png" height="30px"></a>
+    <b class="Contact">G-mail :- </b><a href="mailto: amlaninisarg15@gmail.com" target="_blank"><img src="gmail.png" height="30px"></a>
     <br><br>
-    <b><a href="feedbackform.html"  target="_blank">Link to feedback form</a></b>
+    <b><a class="Contact" href="feedbackform.html"  target="_blank">Link to feedback form</a></b>
     <br>
-    <b><a href="../location-api/location.html" target="_blank">Link to location api</a></b>
+    <b><a class="Contact" href="../location-api/location.html" target="_blank">Link to location api</a></b>
+
+
+    <script>
+        var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        icon.src = "../dark theme icon/sun.png";
+    }
+    else{
+        icon.src = "../dark theme icon/moon.png"
+    }
+}
+    </script>
 </body>
 
 </html>
