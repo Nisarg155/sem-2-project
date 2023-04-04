@@ -8,14 +8,16 @@
 
 
 <body>
+    <img src="../dark theme icon/moon.png" id="icon">
+    <br><br><br><br>
     <lable for="location">Click the button to share the location.</lable>
     <br>
-    <button id="location" style="height: 40px;" onclick="getlocation()">Share location</button>
+    <button id="location"  onclick="getlocation()" class="button-hover">Share location</button>
     <!--? to print the location coordinates get from the function -->
     <p id="location-print"> </p>
     <label for="mylocation">Click the button below to show my location .</label>
     <br>
-    <button id="mylocation" onclick="Mylocation()">My location</button>
+    <button id="mylocation" onclick="Mylocation()" class="button-hover">My location</button>
     <br>
     <p id="showmylocation"></p>
 
@@ -40,7 +42,19 @@
         function Mylocation() {
             myloc.innerHTML = "My location coordinates are <br> " + "latitide :- 22.67703 <br>" + "longitude :- 72.8808";
         }
-        
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                icon.src = "../dark theme icon/sun.png";
+            }
+            else {
+                icon.src = "../dark theme icon/moon.png"
+            }
+        }
 
     </script>
 
