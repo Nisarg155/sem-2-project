@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="html" href="introductiontome.html">
     <title>Document</title>
+    <link rel="stylesheet" href="redirectfeedback.css">
 </head>
-<style>
-    body{
-        background-color: #f5f5dc;
-        color: #006400;
-        text-align: center;
-        font-size: 70px;
-        border-radius: 20px;
-        padding: 18px;
-    }
-</style>
+
 <body>
     <br>
     <br>
     <br>
     
     <p >Thanks for your feedback!!!</p>
+    <script>
+        if(localStorage.getItem('theme') === 'dark-mode')
+        {
+            document.body.classList.toggle("dark-mode");
+        }
+        else if(localStorage.getItem('theme') === 'light-mode' && document.body.classList.contains("dark-mode") )
+        {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
     
 </body>
 </html>

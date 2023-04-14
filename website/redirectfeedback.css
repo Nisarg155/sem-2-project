@@ -1,0 +1,17 @@
+body{
+    background-color: var(--background-color);
+    color: var(--color);
+    text-align: center;
+    font-size: 70px;
+    border-radius: 20px;
+    padding: 18px;
+}
+:root{
+    --background-color : #f5f5dc;
+    --color: #006400;
+}
+
+.dark-mode{
+    --background-color :darkslategrey;
+    --color:gold;
+}
