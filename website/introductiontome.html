@@ -100,9 +100,11 @@ icon.onclick = function(){
 
     if (document.body.classList.contains("dark-theme")) {
         icon.src = "../dark theme icon/sun.png";
+        localStorage.setItem('theme','dark-mode');
     }
     else{
-        icon.src = "../dark theme icon/moon.png"
+        icon.src = "../dark theme icon/moon.png";
+        localStorage.setItem('theme','light-mode');
     }
 }
     </script>
