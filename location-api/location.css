@@ -39,3 +39,29 @@ button {
     --button-background-color: orangered;
     --button-text-color:white;
 }
+
+
+.navigation-bar{
+	float: right;
+	
+}
+.navigation-bar-button{
+	margin-right: 10px;
+	border-radius: 12px;
+	background-color: transparent;
+	border-color: transparent;
+	color: var(--text-color);
+	font-style: italic;
+	font-size: 18px;
+	height: 35px;
+	width:auto;
+	transition: background-color 1.5s ease, color 0.8s ease;
+	
+}
+
+.navigation-bar-button:hover{
+	background-color: var(--text-color);
+    border-color: transparent;
+	color: var(--background-color);
+	transition: 1s;
+}
