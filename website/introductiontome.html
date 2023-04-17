@@ -7,32 +7,89 @@
     <link rel="stylesheet" href="homepage.css">
 </head>
 
-<body >
-    
+<body>
+    <!-- ? navigation bar section -->
     <div class="navigation-bar">
-        <a href="introductiontome.html"><button class="navigation-bar-button" ><b>Home</b></button></a>
-        <button class="navigation-bar-button" ><b>Project</b></button>
+        <a href="introductiontome.html"><button class="navigation-bar-button"><b>Home</b></button></a>
+        <button class="navigation-bar-button"><b>Project</b></button>
         <a href="../jigsaw-puzzel/jigsawgame.html"><button class="navigation-bar-button"><b>Puzzel</b></button></a>
         <a href="feedbackform.html"><button class="navigation-bar-button" id="nvb-feedback"><b>Feedback</b></button></a>
-        <img src="../dark theme icon/moon.png" id="icon" >
-        
+        <img src="../dark theme icon/moon.png" id="icon">
+
     </div>
 
     <img id="myphoto" src="myphoto.png" alt="My Photo" width="300" height="300"></img>
     <p id="nisarg">
         <b>NISARG AMLANI <br> B.Tech COMPUTER ENGINEERING(PURSUING)</b>
     </p>
+
+    <!-- ? about me section  -->
     <h3 style="font-style: italic;" class="heading">
         About Me
     </h3>
-    <P>Myself <b>NISARG AMLANI,</b> pursing <b>Bachelor in Computer engineering </b> from <b>Dharmsinh Desai University(DDU)</b> <br> I am from <b>PORBANDAR</b> .</P>
-    <h3 class="heading">
+    <P>Myself <b>NISARG AMLANI,</b> pursing <b>Bachelor in Computer engineering </b> from <b>Dharmsinh Desai
+            University(DDU)</b> <br> I am from <b>PORBANDAR</b> .</P>
+    <!-- <h3 class="heading">
         Hobbies :
     </h3>
     <p>
         I like to listen songs and clicking photoes in my free time .<br> If it's Weekend I would like to chill by
         watching movies and sleep a lot .
-    </p>
+    </p> -->
+    <!-- ? hobbies section -->
+    <section class="hobbies">
+        <h3 class="heading">My Hobbies</h3>
+        <ul class="hobby-list">
+            <li class="hb-list-li">
+                <div class="hobby-image">
+                    <img src="articles.jpg" alt="Article">
+                </div>
+                <div class="hobby-info">
+                    <h3 class="heading">Reading Articles</h3>
+                    <p>
+                        I like to read articles related geo-politics and new technology .<br>
+                        some of my liked readings are listed below.
+                    <section>
+                        <ul>
+                            <li>
+                                link to article
+                            </li>
+                            <li>
+                                link to article
+                            </li>
+                        </ul>
+                    </section>
+
+                    </p>
+                </div>
+            </li>
+            <li class="hb-list-li">
+                <div class="hobby-image">
+                    <img src="music.jpg" alt="Music">
+                </div>
+                <div class="hobby-info">
+                    <h3 class="heading">Playing Music</h3>
+                    <p>
+                        I like to enjoy music.
+                        some of my liked music are mentioned below.
+                    <section>
+                        <ul>
+                            <li>
+                                link to music.
+                            </li>
+                            <li>
+                                link to music.
+                            </li>
+                        </ul>
+                    </section>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- ? table  -->
     <h3 class="heading">
         Interest :
     </h3>
@@ -45,7 +102,7 @@
     <h4 class="heading">
         EDUCATION QUALIFICATION
     </h4>
- 
+
     <table>
         <tr>
             <th>----Exam----</th>
@@ -85,16 +142,19 @@
             </td>
         </tr>
 
-
+        <!-- ? contact me section -->
     </table>
     <h3 class="heading">Contact Me:</h3>
-    <b class="Contact">Github :- </b> <a href="https://github.com/Nisarg155" target="_blank"><img src="github-sign.png" height="30px"></a>
+    <b class="Contact">Github :- </b> <a href="https://github.com/Nisarg155" target="_blank"><img src="github-sign.png"
+            height="30px"></a>
     <br>
-    <b class="Contact">Linkedin :- </b><a href="https://www.linkedin.com/in/nisarg-amlani-b08911251/" target="_blank"><img src="LI-In-Bug.png" height="30px"></a>
+    <b class="Contact">Linkedin :- </b><a href="https://www.linkedin.com/in/nisarg-amlani-b08911251/"
+        target="_blank"><img src="LI-In-Bug.png" height="30px"></a>
     <br>
-    <b class="Contact">G-mail :- </b><a href="mailto: amlaninisarg15@gmail.com" target="_blank"><img src="gmail.png" height="30px"></a>
+    <b class="Contact">G-mail :- </b><a href="mailto: amlaninisarg15@gmail.com" target="_blank"><img src="gmail.png"
+            height="30px"></a>
     <br><br>
-    <b><a class="Contact" href="feedbackform.html"  target="_blank">Link to feedback form</a></b>
+    <b><a class="Contact" href="feedbackform.html" target="_blank">Link to feedback form</a></b>
     <br>
     <b><a class="Contact" href="../location-api/location.html" target="_blank">Link to location api</a></b>
     <br>
@@ -103,18 +163,26 @@
 
     <script>
         var icon = document.getElementById("icon");
-icon.onclick = function(){
-    document.body.classList.toggle("dark-theme");
+        if (localStorage.getItem('theme') === 'dark-mode') {
+            icon.src = "../dark theme icon/sun.png";
+            document.body.classList.toggle("dark-mode");
+        }
+        else if (localStorage.getItem('theme') === 'light-mode' && document.body.classList.contains("dark-mode")) {
+            icon.src = "../dark theme icon/moon.png";
+            document.body.classList.toggle("dark-mode");
+        }
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-theme")) {
-        icon.src = "../dark theme icon/sun.png";
-        localStorage.setItem('theme','dark-mode');
-    }
-    else{
-        icon.src = "../dark theme icon/moon.png";
-        localStorage.setItem('theme','light-mode');
-    }
-}
+            if (document.body.classList.contains("dark-mode")) {
+                icon.src = "../dark theme icon/sun.png";
+                localStorage.setItem('theme', 'dark-mode');
+            }
+            else {
+                icon.src = "../dark theme icon/moon.png";
+                localStorage.setItem('theme', 'light-mode');
+            }
+        }
 
 
     </script>

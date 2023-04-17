@@ -7,11 +7,11 @@ body {
 	padding: 18px;
 }
 
-.contact{
-    color: var(--heading-color);
+.contact {
+	color: var(--heading-color);
 }
-.heading{
-    color: var(--heading-color);
+.heading {
+	color: var(--heading-color);
 }
 #myphoto {
 	width: 300px;
@@ -20,7 +20,7 @@ body {
 }
 
 #nisarg {
-	color:var(--nisarg-color);
+	color: var(--nisarg-color);
 	font-size: xx-large;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -38,28 +38,26 @@ td {
 	font-size: x-large;
 }
 
-
 :root {
 	transition: background-color 1s ease, color 1.5s ease;
-	--background-color: #f5f5dc;      /*? light mode setting */
-    --heading-color: green;
-    --text-color:green;
-    --table-color:   black;
-    --nisarg-color: limegreen;
+	--background-color: #f5f5dc; /*? light mode setting */
+	--heading-color: green;
+	--text-color: green;
+	--table-color: black;
+	--nisarg-color: limegreen;
 }
-.dark-theme{
-    --background-color:  darkslategray;   /*? dark mode setting */
+.dark-mode {
+	--background-color: darkslategray; /*? dark mode setting */
 	--heading-color: lime;
-    --text-color:white;
-    --table-color:   limegreen;
-    --nisarg-color:orangered;
+	--text-color: white;
+	--table-color: limegreen;
+	--nisarg-color: orangered;
 }
 
-.navigation-bar{
+.navigation-bar {
 	float: right;
-	
 }
-.navigation-bar-button{
+.navigation-bar-button {
 	margin-right: 10px;
 	border-radius: 12px;
 	background-color: transparent;
@@ -68,15 +66,68 @@ td {
 	font-style: italic;
 	font-size: 18px;
 	height: 35px;
-	width:auto;
+	width: auto;
 	transition: background-color 1.5s ease, color 0.8s ease;
-	
 }
 
-.navigation-bar-button:hover{
+.navigation-bar-button:hover {
 	background-color: var(--text-color);
-    border-color: transparent;
+	border-color: transparent;
 	color: var(--background-color);
 	transition: 1s;
 }
+
+/* CSS code */
+.hobbies {
+	max-width: 800px;
+	margin: 0 ;
+	
+}
+
+.hobby-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hb-list-li{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+
+.hobby-image {
+	flex: 1 1 200px;
+	margin-right: 20px;
+    height: 200px;
+    width: 300px;
+}
+
+.hobby-image img {
+	display: block;
+	width: 200px;
+	height: 200px;
+
+}
+
+.hobby-info {
+	flex: 1 1 calc(100% - 220px);
+}
+
+.hobby-info h3 {
+	font-size: 24px;
+	margin: 0 0 10px;
+}
+
+.hobby-info p {
+	margin: 0;
+	font-size: 20px;
+}
+
+.hobby-info-list{
+	font-size: 15px;
+}
+
 
