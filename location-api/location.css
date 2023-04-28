@@ -34,7 +34,7 @@ button {
 }
 
 .dark-mode{
-    --background-color:darkslategrey;
+    --background-color:#1d2a35;
     --text-color: orangered;
     --button-background-color: orangered;
     --button-text-color:white;

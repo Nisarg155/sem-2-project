@@ -47,7 +47,7 @@ body {
 }
 
 .dark-mode{
-    --background-color:darkslategrey;
+    --background-color:#1d2a35;
     --text-color:red;
 }
 .navigation-bar{

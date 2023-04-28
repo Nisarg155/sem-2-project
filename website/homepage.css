@@ -6,29 +6,39 @@ body {
 	border-radius: 20px;
 	padding: 18px;
 }
-
+.link{
+	font-size:23px;
+	color:var(--text-color);
+}
 .contact {
 	color: var(--heading-color);
 }
 .heading {
 	color: var(--heading-color);
+	clear: left;
 }
 #myphoto {
 	width: 300px;
 	height: 300px;
 	border-radius: 200px;
+	float: left ;
+	margin: 100px;
 }
 
 #nisarg {
 	color: var(--nisarg-color);
 	font-size: xx-large;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	position: absolute;
+	top: 200px;
+	left: 600px;
 }
 
 #icon {
 	width: 30px;
 	cursor: pointer;
 	float: right;
+    margin: 8px;
 }
 th,
 td {
@@ -39,6 +49,7 @@ td {
 }
 
 :root {
+	
 	transition: background-color 1s ease, color 1.5s ease;
 	--background-color: #f5f5dc; /*? light mode setting */
 	--heading-color: green;
@@ -47,7 +58,7 @@ td {
 	--nisarg-color: limegreen;
 }
 .dark-mode {
-	--background-color: darkslategray; /*? dark mode setting */
+	--background-color:#1d2a35; /*? dark mode setting */
 	--heading-color: lime;
 	--text-color: white;
 	--table-color: limegreen;

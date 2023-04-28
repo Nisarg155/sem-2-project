@@ -37,7 +37,7 @@ form {
 
 .dark-mode{
     transition: background-color 1.5s ease, color 0.8s ease;
-    --background-color: darkslategray;
+    --background-color: #1d2a35;
     --text-color:gold;
     --button-text-color:white;
     --button-background-color:gold;
