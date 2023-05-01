@@ -4,7 +4,8 @@ body {
 	text-align: justify;
 	font-size: 30px;
 	border-radius: 20px;
-	padding: 18px;
+	/* padding: 18px; */
+	margin: 0px;
 }
 .link{
 	font-size:23px;
@@ -56,6 +57,7 @@ td {
 	--text-color: green;
 	--table-color: black;
 	--nisarg-color: limegreen;
+	--footer-background-color: rgba(4, 106, 2, 0.752);
 }
 .dark-mode {
 	--background-color:#1d2a35; /*? dark mode setting */
@@ -63,6 +65,7 @@ td {
 	--text-color: white;
 	--table-color: limegreen;
 	--nisarg-color: orangered;
+	--footer-background-color:rgb(26, 181, 26);
 }
 
 .navigation-bar {
@@ -140,5 +143,43 @@ td {
 .hobby-info-list{
 	font-size: 15px;
 }
+
+.about{
+	border-radius: 20px;
+	margin: 20px;
+}
+.footer{
+	padding: 40px;
+	border-radius: 10px;
+	background-color: var(--footer-background-color);
+	text-align: center;
+	font-family: 'play',sans-serif;
+
+}
+
+.footer .row{
+	width: 100%;
+}
+
+.footer .row  li {
+	display: inline-block;
+	margin: 20px;
+}
+
+.footer .row img{
+	height: 30px;
+}
+
+.footer .row a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.footer .row{
+	font-size: 15px;
+	color: black;
+}
+
 
 
