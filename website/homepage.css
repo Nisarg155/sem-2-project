@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap');
 body {
 	background-color: var(--background-color);
 	color: var(--text-color);
@@ -40,6 +41,7 @@ body {
 	cursor: pointer;
 	float: right;
     margin: 8px;
+	margin-top: 20px;
 }
 th,
 td {
@@ -81,6 +83,7 @@ td {
 	font-size: 18px;
 	height: 35px;
 	width: auto;
+	margin-top: 20px;
 	transition: background-color 1.5s ease, color 0.8s ease;
 }
 
@@ -181,5 +184,89 @@ td {
 	color: black;
 }
 
+
+/* todo profile card */
+
+.container{
+	width:100%;
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile-box{
+	background: #ff574a;
+	text-align: center;
+	padding: 40px 90px;
+	color: #fff;
+	position: relative;
+	border-radius: 20px;
+}
+
+.container .profile-box .profile-pic{
+	width: 150px;
+	border-radius: 50%;
+	background: #fff;
+	padding: 6px;
+	margin-top: 40px;
+
+}
+
+.menu-icon{
+	width: 25px;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+.setting-icon{
+	width: 25px;
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+
+.profile-pic-social-media{
+	width: 30px;
+	margin: 30px 5px;
+}
+
+.profile-bottom{
+	background: #fff;
+	color: #999;
+	padding: 60px 0;
+	margin-right: -90px;
+	margin-left: -90px;
+	margin-bottom: -40px;
+	border-radius: 20px;
+}
+
+.profile-bottom img{
+	width: 15px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.profile-box button{
+	background: #fff;
+	color:#ff574a ;
+	border: none;
+	outline: none;
+	box-shadow: 0 5px 10px rgba(244, 67, 54, .5);
+	padding: 15px 60px;
+	border-radius: 30px;
+	margin-bottom: -25px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.profile-box h3{
+	font-size: 22px;
+	margin-top: 20px;
+	font-weight: 500;
+}
 
 
