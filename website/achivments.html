@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="achivments.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achivements & Projects</title>
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="introductiontome.html" target="_blank">
+            <button class="navigation-bar-button"><b>Home</b> </button>
+        </a>
+        <a href="../image-galllary/image-gallary.html"><button
+                class="navigation-bar-button"><b>Image-Gallary</b></button></a>
+        <a href="../jigsaw-puzzel/jigsawgame.html"><button class="navigation-bar-button"><b>Puzzel<img src="../dark theme icon/new1.png"
+            style="width: 35px; position: absolute; right: 165px; bottom:94.5%;"></b></button></a>
+        <a href="feedbackform.html"><button class="navigation-bar-button" id="nvb-feedback"><b>Feedback</b></button></a>
+        <img src="../dark theme icon/moon.png" id="icon">
+
+    </div>
+
+
+
+    <div class="achivments">
+        <br><br><br>
+        >> Hackerrank 3<img src="star.png" class="star"> C++ and 4<img src="star.png" class="star"> in C  
+        <br><br>
+        <img src="badges.png" class="achivments-img">
+
+        <br><br><br>
+        >> 1<img src="star.png" class="star"> with max rating 1378
+        <br><br>
+        <img src="codechefprofile.png">
+        <br><br>
+        >> DUHack 2.0 partitation certificate 
+        <br><br>
+        <img src="duhacks-certificate.png" class="">
+    </div>
+
+
+
+        <script>
+        var icon = document.getElementById("icon");
+        if (localStorage.getItem('theme') === 'dark-mode') {
+            icon.src = "../dark theme icon/sun.png";
+            document.body.classList.toggle("dark-mode");
+        }
+        else if (localStorage.getItem('theme') === 'light-mode' && document.body.classList.contains("dark-mode")) {
+            icon.src = "../dark theme icon/moon.png";
+            document.body.classList.toggle("dark-mode");
+        }
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                icon.src = "../dark theme icon/sun.png";
+                localStorage.setItem('theme', 'dark-mode');
+            }
+            else {
+                icon.src = "../dark theme icon/moon.png";
+                localStorage.setItem('theme', 'light-mode');
+            }
+        }
+
+
+    </script>
+</body>
+</html>

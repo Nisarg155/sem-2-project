@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap");
 body {
 	background-color: var(--background-color);
 	color: var(--text-color);
@@ -8,66 +8,27 @@ body {
 	/* padding: 18px; */
 	margin: 0px;
 }
-.link{
-	font-size:23px;
-	color:var(--text-color);
-}
-.contact {
-	color: var(--heading-color);
-}
-.heading {
-	color: var(--heading-color);
-	clear: left;
-}
-#myphoto {
-	width: 300px;
-	height: 300px;
-	border-radius: 200px;
-	float: left ;
-	margin: 100px;
-}
-
-#nisarg {
-	color: var(--nisarg-color);
-	font-size: xx-large;
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	position: absolute;
-	top: 200px;
-	left: 600px;
-}
 
 #icon {
 	width: 30px;
 	cursor: pointer;
 	float: right;
-    margin: 8px;
+	margin: 8px;
 	margin-top: 20px;
-}
-th,
-td {
-	text-align: center;
-	border: 1px solid var(--table-color);
-	color: var(--text-color);
-	font-size: x-large;
 }
 
 :root {
-	
 	transition: background-color 1s ease, color 1.5s ease;
-	--background-color: #f5f5dc; /*? light mode setting */
+	--background-color:#B3FFAE; /*? light mode setting */
 	--heading-color: green;
 	--text-color: green;
-	--table-color: black;
-	--nisarg-color: limegreen;
-	--footer-background-color: rgba(4, 106, 2, 0.752);
+	--profile-background:#2FA4FF;
 }
 .dark-mode {
-	--background-color:#1d2a35; /*? dark mode setting */
+	--background-color: #1d2a35; /*? dark mode setting */
 	--heading-color: lime;
 	--text-color: white;
-	--table-color: limegreen;
-	--nisarg-color: orangered;
-	--footer-background-color:rgb(26, 181, 26);
+	--profile-background: #ff574a;
 }
 
 .navigation-bar {
@@ -94,102 +55,11 @@ td {
 	transition: 1s;
 }
 
-/* CSS code */
-.hobbies {
-	max-width: 800px;
-	margin: 0 ;
-	
-}
+/*? profile card */
 
-.hobby-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.hb-list-li{
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 40px;
-	border-bottom: 1px solid #ddd;
-	padding-bottom: 20px;
-}
-
-.hobby-image {
-	flex: 1 1 200px;
-	margin-right: 20px;
-    height: 200px;
-    width: 300px;
-}
-
-.hobby-image img {
-	display: block;
-	width: 200px;
-	height: 200px;
-
-}
-
-.hobby-info {
-	flex: 1 1 calc(100% - 220px);
-}
-
-.hobby-info h3 {
-	font-size: 24px;
-	margin: 0 0 10px;
-}
-
-.hobby-info p {
-	margin: 0;
-	font-size: 20px;
-}
-
-.hobby-info-list{
-	font-size: 15px;
-}
-
-.about{
-	border-radius: 20px;
-	margin: 20px;
-}
-.footer{
-	padding: 35px;
-	border-radius: 10px;
-	background-color: var(--footer-background-color);
-	text-align: center;
-	font-family: 'play',sans-serif;
-
-}
-
-.footer .row{
+.container {
 	width: 100%;
-}
-
-.footer .row  li {
-	display: inline-block;
-	margin: 20px;
-}
-
-.footer .row img{
-	height: 30px;
-}
-
-.footer .row a{
-	text-decoration: none;
-	color: black;
-	font-size: 20px;
-}
-
-.footer .row{
-	font-size: 15px;
-	color: black;
-}
-
-
-/* todo profile card */
-
-.container{
-	width:100%;
-	height:100vh;
+	height: 100vh;
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -197,8 +67,8 @@ td {
 	justify-content: center;
 }
 
-.profile-box{
-	background: #ff574a;
+.profile-box {
+	background: var(--profile-background);
 	text-align: center;
 	padding: 40px 90px;
 	color: #fff;
@@ -206,34 +76,34 @@ td {
 	border-radius: 20px;
 }
 
-.container .profile-box .profile-pic{
+.container .profile-box .profile-pic {
 	width: 150px;
 	border-radius: 50%;
 	background: #fff;
 	padding: 6px;
 	margin-top: 40px;
-
 }
 
-.menu-icon{
+.menu-icon {
 	width: 25px;
 	position: absolute;
 	left: 40px;
 	top: 40px;
 }
-.setting-icon{
+.setting-icon {
 	width: 25px;
 	position: absolute;
 	right: 40px;
 	top: 40px;
 }
 
-.profile-pic-social-media{
+.social-media img {
 	width: 30px;
-	margin: 30px 5px;
+	position: relative;
+	padding: 10px;
 }
 
-.profile-bottom{
+.profile-bottom {
 	background: #fff;
 	color: #999;
 	padding: 60px 0;
@@ -243,18 +113,18 @@ td {
 	border-radius: 20px;
 }
 
-.profile-bottom img{
+.profile-bottom img {
 	width: 15px;
 	margin-top: 15px;
 	cursor: pointer;
 }
 
-.profile-box button{
+.profile-box button {
 	background: #fff;
-	color:#ff574a ;
+	color: #ff574a;
 	border: none;
 	outline: none;
-	box-shadow: 0 5px 10px rgba(244, 67, 54, .5);
+	box-shadow: 0 5px 10px rgba(244, 67, 54, 0.5);
 	padding: 15px 60px;
 	border-radius: 30px;
 	margin-bottom: -25px;
@@ -263,10 +133,36 @@ td {
 	font-size: 16px;
 }
 
-.profile-box h3{
+.profile-box h3 {
 	font-size: 22px;
 	margin-top: 20px;
 	font-weight: 500;
 }
+
+/*? pagination */
+.pagination{
+	text-align: right;
+	margin-top: -100px;
+}
+
+
+.pagination a{
+	color:white;
+	padding:8px 16px ;
+	text-decoration: none;
+	transition: background-color .3s;
+	font-size: 15px;
+
+}
+
+.pagination a.active{
+	background-color: grey;
+	color: white;
+}
+
+.pagination a:hover:not(.active) {
+	background-color:#a9a7a7;
+}
+
 
 

@@ -1,0 +1,67 @@
+:root {
+	transition: background-color 1s ease, color 1.5s ease;
+	--background-color:#f5f5dc; /*? light mode setting */
+	--heading-color: green;
+	--text-color: green;
+}
+.dark-mode {
+	--background-color: #1d2a35; /*? dark mode setting */
+	--heading-color: lime;
+	--text-color: white;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	text-align: center;
+	align-items: center;
+	font-size: 30px;
+	border-radius: 20px;
+	/* padding: 18px; */
+	margin: 0px;
+}
+
+.navigation-bar {
+	float: right;
+}
+.navigation-bar-button {
+	margin-right: 10px;
+	border-radius: 12px;
+	background-color: transparent;
+	border-color: transparent;
+	color: var(--text-color);
+	font-style: italic;
+	font-size: 18px;
+	height: 35px;
+	width: auto;
+	margin-top: 20px;
+	transition: background-color 1.5s ease, color 0.8s ease;
+}
+
+.navigation-bar-button:hover {
+	background-color: var(--text-color);
+	border-color: transparent;
+	color: var(--background-color);
+	transition: 1s;
+}
+
+#icon {
+	width: 30px;
+	cursor: pointer;
+	float: right;
+	margin: 8px;
+	margin-top: 20px;
+}
+
+
+.achivments{
+	clear: both;
+	text-align: center;
+	margin: auto;
+	
+}
+
+.star{
+	width: 25px;
+}
+
