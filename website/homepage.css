@@ -19,10 +19,10 @@ body {
 
 :root {
 	transition: background-color 1s ease, color 1.5s ease;
-	--background-color:#B3FFAE; /*? light mode setting */
+	--background-color:#FFF1DC; /*? light mode setting */
 	--heading-color: green;
 	--text-color: green;
-	--profile-background:#2FA4FF;
+	--profile-background:#3A98B9;
 }
 .dark-mode {
 	--background-color: #1d2a35; /*? dark mode setting */
@@ -147,7 +147,7 @@ body {
 
 
 .pagination a{
-	color:white;
+	color:var(--text-color);
 	padding:8px 16px ;
 	text-decoration: none;
 	transition: background-color .3s;
@@ -157,7 +157,7 @@ body {
 
 .pagination a.active{
 	background-color: grey;
-	color: white;
+	color:var(--text-color);
 }
 
 .pagination a:hover:not(.active) {

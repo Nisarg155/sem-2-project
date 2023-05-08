@@ -1,6 +1,9 @@
-#icon{
-    height: 50px;
-    float: right;
+#icon {
+	width: 30px;
+	cursor: pointer;
+	float: right;
+	margin: 8px;
+	margin-top: 18px;
 }
 
 body {
@@ -23,7 +26,7 @@ body {
 
 #board img{
     height: 199px;
-    width: 158px;
+    width: 160px;
     border: .5px solid purple;
 }
 
