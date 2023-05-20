@@ -17,6 +17,9 @@ body {
 	float: right;
 	margin-top: 20px;
 }
+.navigation-bar a{
+	text-decoration: none;
+}
 .navigation-bar-button {
 	margin-right: 10px;
 	border-radius: 12px;

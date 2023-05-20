@@ -1,0 +1,109 @@
+<?php 
+$link = mysqli_connect()
+
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="vievport" content="width=device-width, initial-scale=1.0" >
+    <title>
+        Feedback-form
+    </title>
+    <link rel="stylesheet" href="feedbackform.css">
+</head>
+
+
+<body>
+    <img src="../dark theme icon/moon.png" id="icon" >
+
+    <div class="form-div">
+        <form autocomplete="on" action="redirectfeedback.html" method="POST" >
+            <br>
+            <label for="name">Full Name (optional) </label> :-
+            <input type="text" id="name" name="name-filed" placeholder="Enter Name ">
+            <br>
+            <label for="e-mail" aria-required="true">E-mail :- </label>
+            <input type="email" id="e-mail" name="e-mail" placeholder="Enter a valid email">
+            <br>
+            <lable for="number">Enter your phone number :- </lable>
+            <input type="tel" required placeholder="Enter number " id="number">
+            <br>
+            <label for="bramch">Branch :- </label>
+            <select id="bramch">
+                <optgroup label="Branch">
+                    <option selected>CE</option>
+                    <option>IT</option>
+                    <option>EC</option>
+                    <option>OTHERS</option>
+                </optgroup>
+            </select>
+            <label for="sem">Semester :- </label>
+            <select>
+                <optgroup label="sem">
+                    <option selected>2</option>
+                    <option>4</option>
+                    <option>6</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="presentation-rating">How was the presentation .</label>
+            <br><input type="radio" name="presentation-rating" value="&#x1F60D">
+            <label for="&#x1F60D" class="radio"> &#x1F60D </label>
+            <br><input type="radio" name="presentation-rating" value="&#x1F600">
+            <label for="&#x1F600" class="radio"> &#x1F600 </label>
+            <br><input type="radio" name="presentation-rating" value="&#X1F610">
+            <label for="&#X1F610" class="radio">&#X1F610</label>
+            <br><input type="radio" name="presentation-rating" value="&#X1F615">
+            <label for="&#X1F615" class="radio">&#X1F615</label>
+            <br><input type="radio" name="presentation-rating" value="&#x1F621">
+            <label for="&#x1F621" class="radio"> &#x1F621 </label>
+            <br>
+            <label for="explaination">How was the explaination .</label>
+            <br><input type="radio" name="explaination" value="&#x1F60D">
+            <label for="&#x1F60D">&#x1F60D</label>
+            <br><input type="radio" name="explaination" value="&#x1F600">
+            <label for="&#x1F600">&#x1F600</label>
+            <br><input type="radio" name="explaination" value="&#X1F610">
+            <label for="&#X1F610">&#X1F610</label>
+            <br><input type="radio" name="explaination" value="&#X1F615">
+            <label for="&#X1F615">&#X1F615</label>
+            <br><input type="radio" name="explaination" value="&#x1F621">
+            <label for="&#x1F621">&#x1F621</label>
+            <br>
+            <label for="suggestion">Any suggestion you want to provide.</label>
+            <br>
+            <input type="text" size="50" style="height: 30px;" name="suggestion" id="suggestion" placeholder="optional">
+            <br><br>
+            <button type="submit" class="my-button">Submit</button>
+    
+        </form>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        if (localStorage.getItem('theme') === 'dark-mode') {
+            document.body.classList.toggle("dark-mode");
+            icon.src = "../dark theme icon/sun.png";
+        }
+        else if(localStorage.getItem('theme') === 'light-mode' && document.body.classList.contains("dark-mode"))
+        {
+            document.body.classList.toggle("dark-mode");
+            icon.src = "../dark theme icon/moon.png"
+        }
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-mode");
+            
+            if (document.body.classList.contains("dark-mode")) {
+                icon.src = "../dark theme icon/sun.png";
+                localStorage.setItem('theme','dark-mode');
+            }
+            else {
+                icon.src = "../dark theme icon/moon.png";
+                localStorage.setItem('theme','light-mode');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -52,6 +52,9 @@
 	.navigation-bar {
 		float: right;
 	}
+	.navigation-bar a{
+		text-decoration: none;
+	}
 	.navigation-bar-button {
 		margin-right: 10px;
 		border-radius: 12px;
@@ -302,6 +305,9 @@
 	.navigation-bar {
 		float: right;
 	}
+	.navigation-bar a{
+		text-decoration: none;
+	}
 	.navigation-bar-button {
 		margin-right: 10px;
 		border-radius: 12px;
@@ -551,6 +557,9 @@
 	
 	.navigation-bar {
 		float: right;
+	}
+	.navigation-bar a{
+		text-decoration: none;
 	}
 	.navigation-bar-button {
 		margin-right: 10px;
