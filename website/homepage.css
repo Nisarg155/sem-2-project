@@ -101,6 +101,9 @@ body {
 	top: 40px;
 }
 
+.social-media a{
+	text-decoration: none;
+}
 .social-media img {
 	width: 30px;
 	position: relative;
